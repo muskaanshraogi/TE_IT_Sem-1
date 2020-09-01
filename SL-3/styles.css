@@ -1,0 +1,247 @@
+/*------------------------------- GENERAL ---------------------------------------*/
+
+/*-----------------------------------------------------------
+2e8b57 - sea green
+3c3642 - dark blue
+-----------------------------------------------------------*/
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+html {
+    background-color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 330%;
+}
+
+h2 {
+    margin-bottom: 3px;
+}
+
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    width: 100%;
+    padding: 30px 0;
+}
+
+/*------------------------------- BUTTONS ---------------------------------------*/
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.btn-ghost {
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 15px;
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.btn-ghost:hover, .btn-ghost:active {
+    background-color: #eeebd9;
+    border: 2px solid transparent;
+    color: #000000;
+}
+
+/*------------------------------- HOME PAGE ---------------------------------------*/
+
+
+/*------------------------------- HERO SECTION ---------------------------------------*/
+
+.hero-section {
+    width: 100wh;
+    height: 100vh;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(42, 32, 66,0.8)), url(assets/21978.jpg);
+    background-attachment: fixed;
+    color: #ffffff;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: 54%;
+    left: 35%;
+    word-spacing: 10px;
+    
+}
+
+.hero-text .box {
+    border-bottom: 1px solid #ffffff;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+/*----------- TOP NAV --------------------*/
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-right: 50px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-top: 60px;
+    margin-right: 50px;
+}
+
+.main-nav a, .nav-2 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #ffffff;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav a:hover, .main-nav a:visited {
+    border-bottom: 2px solid #eeebd9;
+}
+
+.nav-2 {
+    padding: 20px 30px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-2 ul {
+    float: right;
+    margin-right: 30px;
+}
+
+.nav-2 li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.nav-2 a {
+    font-size: 16px;
+    color: #000000;
+}
+
+.nav-2 a:hover, .nav-2 a:visited {
+    border-bottom: 2px solid #889c0b;
+}
+
+/*------------------------------- FEATURES SECTION -----------------------------------*/
+
+.features-section {
+    display: inline-block;
+    background-color: #f8f8f8;
+}
+
+/*--------------- WORLD MAP -----------------*/
+.world-map {
+    width: 550px;
+    height: 500px;
+    float: left;
+    margin-left: 40px;
+}
+
+.features-text {
+    margin-top: 75px;
+    float: left;
+    margin-left: 20px;
+}
+
+.features-text .feature {
+    padding: 25px 0;
+}
+
+/*-------------------------------QUOTE SECTION -----------------------------------*/
+
+.quote-section {
+    height: 300px;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(142, 135, 156, 0.2)), url(assets/ol.jpg);
+    background-attachment: fixed;
+    background-size: 100% auto;
+    color: #ffffff;
+    text-align: center;
+}
+
+.quote-section blockquote {
+    margin-top: 100px;
+    font-size: 200%;
+    font-weight: 600;
+    border: none;
+}
+
+.quote-section blockquote:before { 
+    content: open-quote; 
+    font-size:80px;
+    color:#889c0b;
+} 
+.quote-section blockquote:after { 
+    content: close-quote;
+    font-size:80px;
+    color:#889c0b;
+}
+
+/*-------------------------------WORDS SECTION -----------------------------------*/
+
+.words-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.words-section h2 {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 200%;
+    border-bottom: 2px solid #889c0b;
+}
+
+.words-for-wanderers {
+    margin: 60px;
+}
+
+/*------------------------------- GALLERY PAGE ---------------------------------------*/
+.gallery {
+    margin: 40px 0;
+}
+
+.main-quote {
+    background-attachment: scroll;
+    background-image: linear-gradient(rgba(158, 83, 83, 0.2), rgba(142, 135, 156, 0.1)), url(assets/main.jpg);
+}
+
+.main-quote blockquote:before, .main-quote blockquote:after {
+    color: #573699;
+}
+
+.gallery-images {
+    padding: 10px 1px;
+    margin: 0 1%;
+    width: 98%;
+}
+
+.gallery-images img {
+    width: 446px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
