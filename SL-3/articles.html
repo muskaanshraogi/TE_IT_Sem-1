@@ -5,12 +5,13 @@
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <meta name="description" content="">
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+        <link href='styles.css' rel='stylesheet' type='text/css'>
 
         <title>One Mile More</title>
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="nav-2 nav-blue">
                 <div>
                     <ul>
                         <li><a href='index.html'>Home</a></li>
@@ -22,45 +23,57 @@
                 </div>
             </nav>
         </header>
-        <br/><br/><br/>
-        <section>
-            <h3>
-                <q>The world is a book and those who don't travel read only a page.</q>
-            </h3>
-        </section>
-        <br/><br/><br/>
-        <section>
-            <div>
-                <h5>CANADA</h5>
-                <img src='assets/canada/adventure-alberta-backside-2916826.jpg' width="350" height="200"/>
-                <h3><a href='articles/theCharmsofCanada.html'>The Charms of Canada</a></h3>   
-            </div>
-            <br/>
-            <div>
-                <h5>ITALY</h5>
-                <img src='assets/italy/venicecanals.jpg' width="350" height="200"/>
-                <h3><a href='#0'>Venice - the City of Canals</a></h3>   
-            </div>
-            <br/>
-            <div>
-                <h5>USA</h5>
-                <img src='assets/usa/ggb.jpeg' width="350" height="200"/>
-                <h3><a href='#0'>The Golden Gate Bridge</a></h3>   
-            </div>
-            <br/>
-            <div>
-                <h5>CANADA</h5>
-                <img src='assets/canada/images.jpeg' width="350" height="200"/>
-                <h3><a href='#0'>The Hidden Wonderland</a></h3>   
-            </div>
-            <br/>
-            <div>
-                <h5>INDIA</h5>
-                <img src='assets/india/pil.jpg' width="350" height="200"/>
-                <h3><a href='#0'>Land of the Pilgrims</a></h3>   
-            </div>
-        </section>
+        <br/>
 
+        <div class='articles'>
+            <section class='quote-section articles-quote'>
+                    <p>
+                        <blockquote><em>The world is a book and those who don't travel read only a page.</em></blockquote>
+                    </p>
+            </section>
+            
+            <section class='articles-section'>
+                <div class='article-card'>
+                    <a href='articles/theCharmsofCanada.html'>
+                        <h5>CANADA</h5>
+                        <img src='assets/canada/adventure-alberta-backside-2916826.jpg'/>
+                        <h3></a>The Charms of Canada</h3>   
+                    </a>
+                </div>
+                
+                <div class='article-card'>
+                    <a href='#0'>
+                        <h5>ITALY</h5>
+                        <img src='assets/italy/venicecanals.jpg'/>
+                        <h3>Venice - the City of Canals</h3>   
+                    </a>
+                </div>
+                
+                <div class='article-card'>
+                    <a href='#0'>
+                        <h5>USA</h5>
+                        <img src='assets/usa/ggb.jpeg'/>
+                        <h3>The Golden Gate Bridge</h3>  
+                    </a> 
+                </div>
+                
+                <div class='article-card'>
+                    <a href='#0'>
+                        <h5>CANADA</h5>
+                        <img src='assets/canada/images.jpeg'/>
+                        <h3>The Hidden Wonderland</h3>   
+                    </a>
+                </div>
+                
+                <div class='article-card'>
+                    <a href='#0'>
+                        <h5>INDIA</h5>
+                        <img src='assets/india/pil.jpg' width="350" height="200"/>
+                        <h3>Land of the Pilgrims</h3>
+                    </a>   
+                </div>
+            </section>
+        </div>
         <footer></footer>
 
     </body>

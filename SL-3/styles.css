@@ -123,6 +123,7 @@ section {
     padding: 20px 30px;
     position: fixed;
     width: 100%;
+    z-index: 10;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -143,6 +144,14 @@ section {
 
 .nav-2 a:hover, .nav-2 a:visited {
     border-bottom: 2px solid #889c0b;
+}
+
+.nav-blue a:hover, .nav-blue a:visited {
+    border-bottom: 2px solid #79cdcd;
+}
+
+.nav-pink a:hover, .nav-pink a:visited {
+    border-bottom: 2px solid #fa036f;
 }
 
 /*------------------------------- FEATURES SECTION -----------------------------------*/
@@ -220,28 +229,175 @@ section {
 }
 
 /*------------------------------- GALLERY PAGE ---------------------------------------*/
-.gallery {
+.gallery, 
+.stories, 
+.articles,
+.bucket-list {
     margin: 40px 0;
+    position: absolute;
 }
 
-.main-quote {
+/*--------------- QUOTES -----------------*/
+.main-quote,
+.india-quote, 
+.indonesia-quote {
     background-attachment: scroll;
     background-image: linear-gradient(rgba(158, 83, 83, 0.2), rgba(142, 135, 156, 0.1)), url(assets/main.jpg);
 }
 
-.main-quote blockquote:before, .main-quote blockquote:after {
+.india-quote, 
+.indonesia-quote {
+    height: 400px;
+}
+
+.main-quote blockquote:before, .main-quote blockquote:after, 
+.india-quote blockquote:before, .india-quote blockquote:after,
+.indonesia-quote blockquote:before, .indonesia-quote blockquote:after {
     color: #573699;
 }
 
+/*--------------- IMAGES -----------------*/
 .gallery-images {
     padding: 10px 1px;
     margin: 0 1%;
     width: 98%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.gallery-images:hover img {
+    filter: blur(2px);
 }
 
 .gallery-images img {
-    width: 446px;
+    width: 440px;
     height: 400px;
-    margin: 0;
-    padding: 0;
+    box-shadow: 0px 0px; 
+    border: solid 3px transparent;
+    transition: transform 0.5s, border 0.1s;
+    z-index: 1;
 }
+
+.gallery-images img:hover {
+    transform: scale(2);
+    border: solid 3px #ffffff;
+    filter: blur(0px);
+    z-index: 5;
+    position: relative;
+}
+
+/*------------------------------- STORIES PAGE ---------------------------------------*/
+.stories, 
+.articles,
+.bucket-list {
+    width: 100%;
+}
+
+/*--------------- QUOTE -----------------*/
+.stories-quote {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(42, 32, 66,0.8)), url(assets/1.jpg);
+}
+
+.stories-quote blockquote:before, .stories-quote blockquote:after,
+.articles-quote blockquote:before, .articles-quote blockquote:after {
+    color: #79cdcd;
+}
+
+/*--------------- STORIES SECTION -----------------*/
+.stories-section,
+.articles-section {
+    display: inline-block;
+    margin: 50px 2%;
+    width: 96%;
+}
+
+/*--------------- CARD -----------------*/
+.story-card,
+.article-card {
+    float: left;
+    height: 400px;
+    width: 510px;
+    margin: 15px 0 15px 27px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: box-shadow 0.2s;
+}
+
+.story-card:hover,
+.article-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.story-card h5,
+.article-card h5 {
+    margin-bottom: 5px;
+    color: #696969;
+}
+
+.story-card img,
+.article-card img {
+    width: 505px;
+    height: 320px;
+}
+
+.story-card h3,
+.article-card h3 {
+    color: #8b72be;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.story-card h3:hover,
+.article-card h3:hover {
+    color: #6a4da6;
+}
+
+.story-card a,
+.article-card a {
+    text-decoration: none;
+}
+
+/*------------------------------- ARTICLES PAGE ---------------------------------------*/
+.articles-quote {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)), url(assets/pols.jpg);
+}
+
+/*------------------------------- BUCKET LIST PAGE ---------------------------------------*/
+.bucket-quote {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(222, 82, 70, 0.2)), url(assets/bol.jpg);
+}
+
+.bucket-quote blockquote:before, .bucket-quote blockquote:after {
+    color: #fa036f;
+}
+
+/*--------------- LIST SECTION -----------------*/
+.list-section {
+    margin: 60px 1%;
+    padding: 0;
+    width: 98%;
+}
+
+.list-section ul {
+    list-style: none;
+}
+
+.list-section li {
+    padding: 20px 50px;
+    margin-bottom: 5px;
+    background-color: #f8f8f8;
+}
+
+.list-section li p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+
+.list-section li h5 {
+    color: #696969;
+    font-size: 15px;
+}
+
+
